@@ -758,17 +758,33 @@ class Level1 extends Phaser.Scene {
             });
             setTimeout(() => {
                 // this.clearScreen();
-                this.tick.destroy();
-                this.op1.destroy();
-                this.op2.destroy();
-                this.op3.destroy();
-                this.op4.destroy();
-                this.frm1.destroy();
-                this.frm2.destroy();
-                this.frm3.destroy();
-                this.frm4.destroy();
+                var config = {
+                    targets: [this.op1, this.op2, this.op3, this.op4, this.frm1, this.frm2, this.frm3, this.frm4], // The objects you want to animate
+                    alpha: 0, // The property you want to tween (in this case, alpha)
+                    duration: 500, // Duration of the animation in milliseconds
+                    ease: 'Linear', // Easing function (e.g., Linear for constant speed)
+                    onComplete: function () {
+                        // This function will be called when the tween is complete
+                        console.log('Tween complete');
+                    },
+                };
 
-                this.cutObjectshow();
+                var tween = this.tweens.add(config);
+
+                // Start the animation
+                tween.play();
+                setTimeout(() => {
+                    this.tick.destroy();
+                    this.op1.destroy();
+                    this.op2.destroy();
+                    this.op3.destroy();
+                    this.op4.destroy();
+                    this.frm1.destroy();
+                    this.frm2.destroy();
+                    this.frm3.destroy();
+                    this.frm4.destroy();
+                    this.cutObjectshow();
+                }, 1000);
             }, 1000);
             // setTimeout(() => {
             //     if (this.numberOfQuestions < 6)
@@ -785,16 +801,33 @@ class Level1 extends Phaser.Scene {
             });
             setTimeout(() => {
                 // this.clearScreen();
-                this.tick.destroy();
-                this.op1.destroy();
-                this.op2.destroy();
-                this.op3.destroy();
-                this.op4.destroy();
-                this.frm1.destroy();
-                this.frm2.destroy();
-                this.frm3.destroy();
-                this.frm4.destroy();
-                this.cutObjectshow();
+                var config = {
+                    targets: [this.op1, this.op2, this.op3, this.op4, this.frm1, this.frm2, this.frm3, this.frm4], // The objects you want to animate
+                    alpha: 0, // The property you want to tween (in this case, alpha)
+                    duration: 500, // Duration of the animation in milliseconds
+                    ease: 'Linear', // Easing function (e.g., Linear for constant speed)
+                    onComplete: function () {
+                        // This function will be called when the tween is complete
+                        console.log('Tween complete');
+                    },
+                };
+
+                var tween = this.tweens.add(config);
+
+                // Start the animation
+                tween.play();
+                setTimeout(() => {
+                    this.tick.destroy();
+                    this.op1.destroy();
+                    this.op2.destroy();
+                    this.op3.destroy();
+                    this.op4.destroy();
+                    this.frm1.destroy();
+                    this.frm2.destroy();
+                    this.frm3.destroy();
+                    this.frm4.destroy();
+                    this.cutObjectshow();
+                }, 1000);
             }, 1000);
             // setTimeout(() => {
             //     if (this.numberOfQuestions < 6)
@@ -811,16 +844,33 @@ class Level1 extends Phaser.Scene {
             });
             setTimeout(() => {
                 // this.clearScreen();
-                this.tick.destroy();
-                this.op1.destroy();
-                this.op2.destroy();
-                this.op3.destroy();
-                this.op4.destroy();
-                this.frm1.destroy();
-                this.frm2.destroy();
-                this.frm3.destroy();
-                this.frm4.destroy();
-                this.cutObjectshow();
+                var config = {
+                    targets: [this.op1, this.op2, this.op3, this.op4, this.frm1, this.frm2, this.frm3, this.frm4], // The objects you want to animate
+                    alpha: 0, // The property you want to tween (in this case, alpha)
+                    duration: 500, // Duration of the animation in milliseconds
+                    ease: 'Linear', // Easing function (e.g., Linear for constant speed)
+                    onComplete: function () {
+                        // This function will be called when the tween is complete
+                        console.log('Tween complete');
+                    },
+                };
+
+                var tween = this.tweens.add(config);
+
+                // Start the animation
+                tween.play();
+                setTimeout(() => {
+                    this.tick.destroy();
+                    this.op1.destroy();
+                    this.op2.destroy();
+                    this.op3.destroy();
+                    this.op4.destroy();
+                    this.frm1.destroy();
+                    this.frm2.destroy();
+                    this.frm3.destroy();
+                    this.frm4.destroy();
+                    this.cutObjectshow();
+                }, 1000);
             }, 1000);
             // setTimeout(() => {
             //     if (this.numberOfQuestions < 6)
@@ -835,18 +885,38 @@ class Level1 extends Phaser.Scene {
             this.opArray.forEach(element => {
                 element.input.enabled = false;
             });
+
+
+            // this.clearScreen();
             setTimeout(() => {
                 // this.clearScreen();
-                this.tick.destroy();
-                this.op1.destroy();
-                this.op2.destroy();
-                this.op3.destroy();
-                this.op4.destroy();
-                this.frm1.destroy();
-                this.frm2.destroy();
-                this.frm3.destroy();
-                this.frm4.destroy();
-                this.cutObjectshow();
+                var config = {
+                    targets: [this.op1, this.op2, this.op3, this.op4, this.frm1, this.frm2, this.frm3, this.frm4], // The objects you want to animate
+                    alpha: 0, // The property you want to tween (in this case, alpha)
+                    duration: 500, // Duration of the animation in milliseconds
+                    ease: 'Linear', // Easing function (e.g., Linear for constant speed)
+                    onComplete: function () {
+                        // This function will be called when the tween is complete
+                        console.log('Tween complete');
+                    },
+                };
+
+                var tween = this.tweens.add(config);
+
+                // Start the animation
+                tween.play();
+                setTimeout(() => {
+                    this.tick.destroy();
+                    this.op1.destroy();
+                    this.op2.destroy();
+                    this.op3.destroy();
+                    this.op4.destroy();
+                    this.frm1.destroy();
+                    this.frm2.destroy();
+                    this.frm3.destroy();
+                    this.frm4.destroy();
+                    this.cutObjectshow();
+                }, 1000);
             }, 1000);
             // setTimeout(() => {
             //     if (this.numberOfQuestions < 6)
@@ -868,6 +938,7 @@ class Level1 extends Phaser.Scene {
     cutObjectshow() {
         this.Box2 = this.add.sprite(1100, 360, 'Box1');
         this.Box2.setScale(1.5, 1.3);
+        this.Box2.alpha = 0;
 
         switch (this.objectArray[this.count1]) {
             case 'beetroot':
@@ -1005,7 +1076,7 @@ class Level1 extends Phaser.Scene {
 
         // Create a Phaser Tweens animation
         var config = {
-            targets: this.lastObject, // The objects you want to animate
+            targets: [this.lastObject,this.Box2], // The objects you want to animate
             alpha: 1, // The property you want to tween (in this case, alpha)
             duration: 2000, // Duration of the animation in milliseconds
             ease: 'Linear', // Easing function (e.g., Linear for constant speed)
