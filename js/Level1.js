@@ -1000,13 +1000,33 @@ class Level1 extends Phaser.Scene {
                 }
                 break;
         }
+
+        this.lastObject.alpha = 0;
+
+        // Create a Phaser Tweens animation
+        var config = {
+            targets: this.lastObject, // The objects you want to animate
+            alpha: 1, // The property you want to tween (in this case, alpha)
+            duration: 2000, // Duration of the animation in milliseconds
+            ease: 'Linear', // Easing function (e.g., Linear for constant speed)
+            onComplete: function () {
+                // This function will be called when the tween is complete
+                console.log('Tween complete');
+            },
+        };
+
+        var tween = this.tweens.add(config);
+
+        // Start the animation
+        tween.play();
+
         setTimeout(() => {
             this.clearScreen();
-        }, 2000);
+        }, 3000);
         setTimeout(() => {
             if (this.numberOfQuestions < 6)
                 this.initialscreenLoad();
-        }, 2500);
+        }, 3500);
     }
     clearScreen() {
         this.Box1.destroy();
